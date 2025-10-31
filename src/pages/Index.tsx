@@ -187,21 +187,25 @@ const Index = () => {
       image: BlusaNoTuleRosaClaro,
       title: "Blusa No Tule Rosa Claro",
       price: 32.99,
+      sizes: ["P", "M", "G", "GG"],
     },
     {
       image: ConjuntoPreto,
       title: "Conjunto No Suplex",
       price: 69.90,
+      sizes: ["P", "M"],
     },
     {
       image: BlusaNoTuleAzulClaro,
       title: "Blusa No Tule Azul Claro",
       price: 32.99,
+      sizes: ["P", "M", "G", "GG"],
     },
     {
       image: ConjuntoRosa,
       title: "Conjunto No Suplex",
       price: 69.90,
+      sizes: ["P", "M"],
     },
   ];
 
