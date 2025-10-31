@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/vitrine.damoda23"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground transition-all"
@@ -25,7 +25,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5562996904380"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground transition-all"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a
-                href="https://tiktok.com"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary/10 hover:bg-primary text-primary hover:text-primary-foreground transition-all"
@@ -73,36 +73,7 @@ const Footer = () => {
           </div>
 
           {/* Policies */}
-          <div>
-            <h4 className="font-semibold text-lg mb-4">Atendimento</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/trocas" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Trocas e Devoluções
-                </Link>
-              </li>
-              <li>
-                <Link to="/envio" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Política de Envio
-                </Link>
-              </li>
-              <li>
-                <Link to="/privacidade" className="text-secondary-foreground/80 hover:text-primary transition-colors">
-                  Privacidade
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="https://wa.me/5511999999999"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors"
-                >
-                  WhatsApp
-                </a>
-              </li>
-            </ul>
-          </div>
+          
         </div>
 
         {/* Copyright */}
