@@ -161,7 +161,7 @@ const Index = () => {
       image: ConjuntoPoliamidaBranco,
       title: "Conjunto Poliamida Duplo",
       price: 119.90,
-      originalPrice: 49.99,
+      originalPrice: 139.90,
       sizes: ["M", "G"],
     },
     {
