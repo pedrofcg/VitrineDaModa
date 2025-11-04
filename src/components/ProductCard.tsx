@@ -91,25 +91,28 @@ const ProductCard = ({ image, title, price, originalPrice, sizes }: ProductCardP
         </CardContent>
 
         <CardFooter className="p-4 pt-0">
-          <Button
-            className="
-              w-full 
-              group/btn 
-              flex items-center justify-center 
-              gap-2
-              text-sm sm:text-base        /* tamanho do texto */
-              py-2 sm:py-3                /* altura do botão */
-              px-3 sm:px-4                /* padding lateral */
-              rounded-xl sm:rounded-2xl   /* bordas mais suaves em telas maiores */
-              transition-all duration-200 /* animação suave */
-            "
-            variant="default"
-            onClick={handleWhatsAppOrder}
-          >
-            <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 mr-1 group-hover/btn:animate-pulse" />
-            Comprar no WhatsApp
-        </Button>
-      </CardFooter>
+          <div className="w-full flex justify-center">
+            <Button
+              className="
+                w-full max-w-[400px]    /* limita largura máxima (ótimo pra desktop) */
+                group/btn 
+                flex items-center justify-center 
+                gap-2
+                text-sm sm:text-base
+                py-2 sm:py-3
+                px-3 sm:px-4
+                rounded-xl sm:rounded-2xl
+                transition-all duration-200
+                text-center whitespace-normal break-words /* 🔹 permite quebra de linha */
+              "
+              variant="default"
+              onClick={handleWhatsAppOrder}
+            >
+              <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 group-hover/btn:animate-pulse flex-shrink-0" />
+              <span className="text-wrap">Comprar no WhatsApp</span>
+            </Button>
+          </div>
+        </CardFooter>
       </Card>
 
       <ProductDetailDialog
