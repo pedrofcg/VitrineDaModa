@@ -98,7 +98,7 @@ const ProductCard = ({ image, title, price, originalPrice, sizes }: ProductCardP
                 group/btn 
                 flex items-center justify-center 
                 gap-2
-                text-sm sm:text-base
+                text-xs sm:text-sm md:text-base
                 py-2 sm:py-3
                 px-3 sm:px-4
                 rounded-xl sm:rounded-2xl
