@@ -214,7 +214,7 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-[600px] md:h-[700px] flex items-center mt-20">
+      <section className="relative h-[500px] md:h-[600px] lg:h-[700px] flex items-center mt-20">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -223,25 +223,25 @@ const Index = () => {
         />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 backdrop-blur-sm text-primary-foreground mb-6">
-              <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-medium">Nova Coleção 2025</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-primary/20 backdrop-blur-sm text-primary-foreground mb-4 md:mb-6">
+              <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
+              <span className="text-xs md:text-sm font-medium">Nova Coleção 2025</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
               Vista sua melhor versão
             </h1>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-base md:text-xl text-white/90 mb-6 md:mb-8">
               Moda fitness que combina estilo, conforto e performance para mulheres que não abrem mão de nada.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/colecoes">
-                <Button size="lg" className="text-lg px-8">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+              <Link to="/colecoes" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8">
                   Compre Agora
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
               </Link>
-              <Link to="/sobre">
-                <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-secondary">
+              <Link to="/sobre" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-secondary">
                   Conheça a Marca
                 </Button>
               </Link>
@@ -251,17 +251,17 @@ const Index = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 bg-muted">
+      <section className="py-12 md:py-16 lg:py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
               Destaques da Semana
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base md:text-lg text-muted-foreground px-4">
               Peças selecionadas especialmente para você arrasar nos treinos
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {featuredProducts.map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
@@ -270,17 +270,17 @@ const Index = () => {
       </section>
 
       {/* Best Sellers */}
-      <section className="py-20">
+      <section className="py-12 md:py-16 lg:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 md:mb-4">
               Mais Vendidos
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base md:text-lg text-muted-foreground px-4">
               Os favoritos das nossas clientes
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {bestSellers.map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
@@ -289,18 +289,18 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary-hover text-primary-foreground">
+      <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-r from-primary to-primary-hover text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-4">
             Pronta para se sentir poderosa?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+          <p className="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto opacity-90 px-4">
             Descubra a coleção completa e encontre o look perfeito para seus treinos
           </p>
           <Link to="/colecoes">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
+            <Button size="lg" variant="secondary" className="text-base md:text-lg px-6 md:px-8">
               Ver Todas as Coleções
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
             </Button>
           </Link>
         </div>
@@ -312,3 +312,4 @@ const Index = () => {
 };
 
 export default Index;
+
