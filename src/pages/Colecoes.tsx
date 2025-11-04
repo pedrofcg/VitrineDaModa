@@ -67,26 +67,27 @@ const Colecoes = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <main className="pt-32 pb-20">
+      <main className="pt-28 md:pt-32 pb-12 md:pb-20">
         <div className="container mx-auto px-4">
           {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-3 md:mb-4">
               Nossas Coleções
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base md:text-xl text-muted-foreground px-4">
               Encontre o look perfeito para seus treinos
             </p>
           </div>
 
           {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-12 px-2">
             {categories.map((cat) => (
               <Button
                 key={cat.id}
                 variant={filter === cat.id ? "default" : "outline"}
                 onClick={() => setFilter(cat.id)}
-                className="transition-all"
+                className="transition-all text-sm md:text-base"
+                size={typeof window !== 'undefined' && window.innerWidth < 768 ? "sm" : "default"}
               >
                 {cat.label}
               </Button>
@@ -94,7 +95,7 @@ const Colecoes = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-6">
             {filteredProducts.map((product, index) => (
               <ProductCard key={index} {...product} />
             ))}
