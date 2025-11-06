@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent">
-              Vitrine Da Moda
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Vitrine Da Moda" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +45,10 @@ const Navbar = () => {
           {/* Cart & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="icon" className="relative">
-              
+              <ShoppingBag className="h-5 w-5" />
+              <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-bold text-primary-foreground flex items-center justify-center">
+                0
+              </span>
             </Button>
 
             {/* Mobile Menu Toggle */}
