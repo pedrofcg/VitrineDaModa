@@ -68,7 +68,7 @@ const Contato = () => {
                       <p className="text-muted-foreground text-sm mb-2">
                         Fale conosco diretamente pelo WhatsApp
                       </p>
-                      <p className="text-primary font-medium">+55 (62) 99690-4380</p>
+                      <p className="text-primary font-medium">+55 (62) 998247478</p>
                     </div>
                   </CardContent>
                 </a>
