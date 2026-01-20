@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { MessageCircle, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -15,6 +15,7 @@ interface ProductDetailDialogProps {
   onOpenChange: (open: boolean) => void;
   id: string;
   image: string;
+  images?: string[];
   title: string;
   price: number;
   originalPrice?: number;
@@ -28,6 +29,7 @@ const ProductDetailDialog = ({
   onOpenChange,
   id,
   image,
+  images,
   title,
   price,
   originalPrice,
@@ -40,6 +42,22 @@ const ProductDetailDialog = ({
   const [selectedSize, setSelectedSize] = useState(
     availableSizes.length > 0 ? availableSizes[0] : "Tamanho Único"
   );
+
+  // Configurar imagens da galeria
+  const galleryImages = images && images.length > 0 ? images : [image];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const goToPreviousImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? galleryImages.length - 1 : prev - 1
+    );
+  };
+
+  const goToNextImage = () => {
+    setCurrentImageIndex((prev) =>
+      prev === galleryImages.length - 1 ? 0 : prev + 1
+    );
+  };
 
   const discount = originalPrice
     ? Math.round(((originalPrice - price) / originalPrice) * 100)
@@ -71,15 +89,62 @@ const ProductDetailDialog = ({
 
         <div className="grid md:grid-cols-2 gap-0">
           {/* Seção da Imagem */}
-          <div className="relative aspect-square bg-muted">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover"
-            />
-            {discount > 0 && (
-              <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold">
-                -{discount}%
+          <div className="relative aspect-square bg-muted flex flex-col">
+            {/* Imagem Principal */}
+            <div className="flex-1 relative">
+              <img
+                src={galleryImages[currentImageIndex]}
+                alt={title}
+                className="w-full h-full object-cover"
+              />
+              {discount > 0 && (
+                <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-bold">
+                  -{discount}%
+                </div>
+              )}
+
+              {/* Navegação de Imagens */}
+              {galleryImages.length > 1 && (
+                <>
+                  <button
+                    onClick={goToPreviousImage}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-all z-5"
+                    aria-label="Imagem anterior"
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </button>
+                  <button
+                    onClick={goToNextImage}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-background/80 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-all z-5"
+                    aria-label="Próxima imagem"
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Miniaturas das Imagens */}
+            {galleryImages.length > 1 && (
+              <div className="flex gap-2 p-3 bg-muted border-t overflow-x-auto">
+                {galleryImages.map((img, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+                      index === currentImageIndex
+                        ? "border-primary"
+                        : "border-border hover:border-primary/50"
+                    }`}
+                    aria-label={`Imagem ${index + 1}`}
+                  >
+                    <img
+                      src={img}
+                      alt={`${title} - ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
               </div>
             )}
           </div>
