@@ -141,7 +141,7 @@ const Index = () => {
     {
       image: BlusaNoTuleAzulClaro,
       title: "Blusa No Tule Azul Claro",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleAzulClaro],
@@ -149,7 +149,7 @@ const Index = () => {
     {
       image: BlusaNoTuleBeje,
       title: "Blusa No Tule Bege",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleBeje],
@@ -157,7 +157,7 @@ const Index = () => {
     {
       image: BlusaNoTuleBranco,
       title: "Blusa No Tule Branco",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleBranco],
@@ -165,7 +165,7 @@ const Index = () => {
     {
       image: BlusaNoTuleMarrom,
       title: "Blusa No Tule Marrom",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleMarrom],
@@ -173,7 +173,7 @@ const Index = () => {
     {
       image: BlusaNoTuleRosaClaro,
       title: "Blusa No Tule Rosa Claro",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleRosaClaro],
@@ -181,7 +181,7 @@ const Index = () => {
     {
       image: BlusaNoTuleRosa,
       title: "Blusa No Tule Rosa",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleRosa],
@@ -189,7 +189,7 @@ const Index = () => {
     {
       image: BlusaNoTulePreto,
       title: "Blusa No Tule Preto",
-      price: 32.99,
+      price: 44.99,
       originalPrice: 49.99,
       sizes: ["P", "M"],
       images: [BlusaNoTulePreto],
