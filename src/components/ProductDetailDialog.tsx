@@ -70,7 +70,7 @@ const ProductDetailDialog = ({
     if (selectedSize) {
       message += `\nTamanho: ${selectedSize}`;
     }
-    const whatsappUrl = `https://wa.me/5562996904380?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/5562998247478?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");
