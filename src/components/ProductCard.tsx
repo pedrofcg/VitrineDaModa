@@ -6,13 +6,14 @@ import ProductDetailDialog from "./ProductDetailDialog";
 
 interface ProductCardProps {
   image: string;
+  images?: string[];
   title: string;
   price: number;
   originalPrice?: number;
   sizes?: string[]; // 👈 Adicionado suporte a tamanhos
 }
 
-const ProductCard = ({ image, title, price, originalPrice, sizes }: ProductCardProps) => {
+const ProductCard = ({ image, images, title, price, originalPrice, sizes }: ProductCardProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const discount = originalPrice
@@ -119,6 +120,7 @@ const ProductCard = ({ image, title, price, originalPrice, sizes }: ProductCardP
         open={isDialogOpen}
         onOpenChange={setIsDialogOpen}
         image={image}
+        images={images}
         title={title}
         price={price}
         originalPrice={originalPrice}
