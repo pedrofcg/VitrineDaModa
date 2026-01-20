@@ -47,8 +47,8 @@ const Colecoes = () => {
     { image: ConjuntoPreto, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoPreto], sizes: ["P", "M"] },
     { image: ConjuntoLaranja, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoLaranja], sizes: ["P", "M"] },
     { image: ConjuntoMarrom, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoMarrom], sizes: ["P", "M"] },
-    { image: ShortBeachTenisBranco, title: "Short Beach Tenis", price: 32.99, originalPrice: 49.99, category: "shorts", images: [ShortBeachTenisBranco, ShortBeachTenisBranco01, ShortBeachTenisBranco03], sizes: ["P", "M", "G"] },
-    { image: ShortBeachTenis, title: "Short Beach Tenis", price: 32.99, originalPrice: 49.99, category: "shorts", images: [ShortBeachTenis], sizes: ["P", "M", "G"] },
+    { image: ShortBeachTenisBranco, title: "Short Beach Tenis", price: 99.99, originalPrice: 129.99, category: "shorts", images: [ShortBeachTenisBranco, ShortBeachTenisBranco01, ShortBeachTenisBranco03], sizes: ["P", "M", "G"] },
+    { image: ShortBeachTenis, title: "Short Beach Tenis", price: 99.99, originalPrice: 129.99, category: "shorts", images: [ShortBeachTenis], sizes: ["P", "M", "G"] },
   ];
 
   const filteredProducts = filter === "all" 
