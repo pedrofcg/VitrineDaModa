@@ -33,6 +33,48 @@ import ShortBeachTenis from "@/assets/ShortBeachTenis.jpg";
 import ShortBeachTenisBranco from "@/assets/ShortBeachTenisBranco.jpg";
 import ShortBeachTenisBranco01 from "@/assets/ShortBeachTenisBranco01.jpg";
 import ShortBeachTenisBranco03 from "@/assets/ShortBeachTenisBranco03.jpg";
+import azul3 from "@/assets/azul3.jpeg";
+import azul4 from "@/assets/azul4.jpeg";
+import AzulEscuro1 from "@/assets/AzulEscuro1.jpeg";
+import AzulEscuro2 from "@/assets/AzulEscuro2.jpeg";
+import AzulEscuro3 from "@/assets/AzulEscuro3.jpeg";
+import AzulEscuro4 from "@/assets/AzulEscuro4.jpeg";
+import rosa1 from "@/assets/rosa1.jpeg";
+import rosa2 from "@/assets/rosa2.jpeg";
+import rosa3 from "@/assets/rosa3.jpeg";
+import verde from "@/assets/verde.jpeg";
+import verde2 from "@/assets/verde2.jpeg";
+import verde3 from "@/assets/verde3.jpeg";
+import verde4 from "@/assets/verde4.jpeg";
+import roxo from "@/assets/roxo.jpeg";
+import roxo2 from "@/assets/roxo2.jpeg";
+import roxo3 from "@/assets/roxo3.jpeg";
+import roxo4 from "@/assets/roxo4.jpeg";
+import roxo5 from "@/assets/roxo5.jpeg";
+import roxo6 from "@/assets/roxo6.jpeg";
+import vermelho1 from "@/assets/vermelho1.jpeg";
+import vermelho2 from "@/assets/vermelho2.jpeg";
+import vermelho3 from "@/assets/vermelho3.jpeg";
+import vermelho4 from "@/assets/vermelho4.jpeg";
+import vinho1 from "@/assets/vinho1.jpeg";
+import vinho2 from "@/assets/vinho2.jpeg";
+import vinho3 from "@/assets/vinho3.jpeg";
+import vinho4 from "@/assets/vinho4.jpeg";
+import AzulClaro1 from "@/assets/AzulClaro1.jpeg";
+import AzulClaro2 from "@/assets/AzulClaro2.jpeg";
+import AzulClaro3 from "@/assets/AzulClaro3.jpeg";
+import AzulClaro4 from "@/assets/AzulClaro4.jpeg";
+import AzulClaro5 from "@/assets/AzulClaro5.jpeg";
+import AzulClaro6 from "@/assets/AzulClaro6.jpeg";
+import marrom1 from "@/assets/marrom1.jpeg";
+import marrom2 from "@/assets/marrom2.jpeg";
+import lilas1 from "@/assets/lilas1.jpeg";
+import lilas2 from "@/assets/lilas2.jpeg";
+import lilas3 from "@/assets/lilas3.jpeg";
+import lilas4 from "@/assets/lilas4.jpeg";
+import lilas5 from "@/assets/lilas5.jpeg";
+import lilas6 from "@/assets/lilas6.jpeg";
+import lilas7 from "@/assets/lilas7.jpeg";
 
 
 
@@ -40,15 +82,37 @@ const Colecoes = () => {
   const [filter, setFilter] = useState("all");
 
   const products = [
-    { image: ConjuntoAzul, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoAzul], sizes: ["P", "M"] },
-    { image: ConjuntoVinho, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoVinho], sizes: ["P", "M"] },
-    { image: ConjuntoRoxo, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoRoxo], sizes: ["P", "M"] },
-    { image: ConjuntoRosa, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoRosa], sizes: ["P", "M"] },
     { image: ConjuntoPreto, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoPreto], sizes: ["P", "M"] },
-    { image: ConjuntoLaranja, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoLaranja], sizes: ["P", "M"] },
+    { image: ConjuntoAzul, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoAzul], sizes: ["P", "M"] },
+    { image: ConjuntoRosa, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoRosa], sizes: ["P", "M"] },
+    { image: ConjuntoRoxo, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoRoxo], sizes: ["P", "M"] },
     { image: ConjuntoMarrom, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoMarrom], sizes: ["P", "M"] },
-    { image: ShortBeachTenisBranco, title: "Short Beach Tenis", price: 99.99, originalPrice: 129.99, category: "shorts", images: [ShortBeachTenisBranco, ShortBeachTenisBranco01, ShortBeachTenisBranco03], sizes: ["P", "M", "G"] },
-    { image: ShortBeachTenis, title: "Short Beach Tenis", price: 99.99, originalPrice: 129.99, category: "shorts", images: [ShortBeachTenis], sizes: ["P", "M", "G"] },
+    { image: ConjuntoVinho, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoVinho], sizes: ["P", "M"] },
+    { image: ConjuntoLaranja, title: "Conjunto No Suplex", price: 69.90, originalPrice: 89.90, category: "conjuntos", images: [ConjuntoLaranja], sizes: ["P", "M"] },
+    { image: BlusaNoTuleAzulClaro, title: "Blusa No Tule Azul Claro", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleAzulClaro], sizes: ["P", "M"] },
+    { image: BlusaNoTuleBeje, title: "Blusa No Tule Bege", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleBeje], sizes: ["P", "M"] },
+    { image: BlusaNoTuleBranco, title: "Blusa No Tule Branco", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleBranco], sizes: ["P", "M"] },
+    { image: BlusaNoTuleMarrom, title: "Blusa No Tule Marrom", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleMarrom], sizes: ["P", "M"] },
+    { image: BlusaNoTuleRosaClaro, title: "Blusa No Tule Rosa Claro", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleRosaClaro], sizes: ["P", "M"] },
+    { image: BlusaNoTuleRosa, title: "Blusa No Tule Rosa", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTuleRosa], sizes: ["P", "M"] },
+    { image: BlusaNoTulePreto, title: "Blusa No Tule Preto", price: 32.99, originalPrice: 49.99, category: "tops", images: [BlusaNoTulePreto], sizes: ["P", "M"] },
+    { image: ConjuntoCaneladoBicolor, title: "Conjunto Canelado Bicolor", price: 129.99, originalPrice: 149.99, category: "conjuntos", images: [ConjuntoCaneladoBicolor, ConjuntoCaneladoBicolor01], sizes: ["M", "G"] },
+    { image: ConjuntoCaneladoRosa01, title: "Conjunto Canelado", price: 119.90, originalPrice: 139.90, category: "conjuntos", images: [ConjuntoCaneladoRosa, ConjuntoCaneladoRosa01], sizes: ["M", "G"] },
+    { image: ConjuntoPoliamidaAzulClaro01, title: "Conjunto Poliamida", price: 109.90, originalPrice: 129.90, category: "conjuntos", images: [ConjuntoPoliamidaAzulClaro, ConjuntoPoliamidaAzulClaro01], sizes: ["M", "G"] },
+    { image: ConjuntoPoliamidaBranco, title: "Conjunto Poliamida Duplo", price: 119.90, originalPrice: 139.90, category: "conjuntos", images: [ConjuntoPoliamidaBranco, ConjuntoPoliamidaBranco01], sizes: ["M", "G"] },
+    { image: ShortBeachTenis, title: "Short Beach Tênis Com Bolso", price: 99.90, originalPrice: 129.90, category: "shorts", images: [ShortBeachTenis], sizes: ["P", "M", "G"] },
+    { image: ShortBeachTenisBranco, title: "Short Beach Tênis", price: 99.90, originalPrice: 129.90, category: "shorts", images: [ShortBeachTenisBranco, ShortBeachTenisBranco01, ShortBeachTenisBranco03], sizes: ["P", "M", "G"] },
+    { image: azul3, title: "Macacão sem costura", price: 129.90, originalPrice: 139.90, category: "conjuntos", images: [azul3, azul4], sizes: ["P", "M", "G"] },
+    { image: AzulEscuro2, title: "Conjunto Canelado Bicolor", price: 159.99, originalPrice: 169.90, category: "conjuntos", images: [AzulEscuro2, AzulEscuro1, AzulEscuro3, AzulEscuro4], sizes: ["P", "M", "G"] },
+    { image: rosa1, title: "Conjunto Canelado", price: 139.99, originalPrice: 149.99, category: "conjuntos", images: [rosa1, rosa2, rosa3], sizes: ["P", "M", "G"] },
+    { image: verde3, title: "Conjunto Canelado Jacquard", price: 149.99, originalPrice: 169.90, category: "conjuntos", images: [verde, verde2, verde3, verde4], sizes: ["P", "M", "G"] },
+    { image: roxo, title: "Conjunto Canelado Poliamida", price: 119.99, originalPrice: 129.90, category: "conjuntos", images: [roxo, roxo2, roxo3], sizes: ["P", "M", "G"] },
+    { image: vermelho1, title: "Conjunto Canelado", price: 159.99, originalPrice: 169.90, category: "conjuntos", images: [vermelho1, vermelho2, vermelho3, vermelho4], sizes: ["P", "M", "G"] },
+    { image: vinho4, title: "Macaquinho Sem Costura", price: 119.99, originalPrice: 129.90, category: "conjuntos", images: [vinho1, vinho2, vinho3, vinho4], sizes: ["P", "M", "G"] },
+    { image: AzulClaro1, title: "Conjunto Canelado Mula Manca", price: 159.99, originalPrice: 169.90, category: "conjuntos", images: [AzulClaro1, AzulClaro2, AzulClaro3, AzulClaro4, AzulClaro5, AzulClaro6], sizes: ["P", "M", "G"] },
+    { image: marrom1, title: "Macacão Longo Canelado", price: 169.99, category: "conjuntos", images: [marrom1, marrom2], sizes: ["P", "M", "G"] },
+    { image: lilas1, title: "Conjunto IZA Canelado", price: 159.99, originalPrice: 169.90, category: "conjuntos", images: [lilas1, lilas2, lilas3, lilas4, lilas5, lilas6, lilas7], sizes: ["P", "M", "G"] },
+    { image: roxo4, title: "Conjunto Canelado", price: 139.99, category: "conjuntos", images: [roxo4, roxo5, roxo6], sizes: ["P", "M", "G"] },
   ];
 
   const filteredProducts = filter === "all" 
