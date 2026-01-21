@@ -338,7 +338,7 @@ const Index = () => {
     {
       image: BlusaNoTuleRosaClaro,
       title: "Blusa No Tule Rosa Claro",
-      price: 32.99,
+      price: 44.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleRosaClaro],
     },
@@ -352,7 +352,7 @@ const Index = () => {
     {
       image: BlusaNoTuleAzulClaro,
       title: "Blusa No Tule Azul Claro",
-      price: 32.99,
+      price: 44.99,
       sizes: ["P", "M"],
       images: [BlusaNoTuleAzulClaro],
     },
